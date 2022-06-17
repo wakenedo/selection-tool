@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { useEffect, useState } from "react";
-import {Button} from '@mui/material'
+import { Box, Button } from '@mui/material'
 
 const Tests: NextPage = () => {
     const [counter, setCounter] = useState(0)
@@ -13,13 +13,13 @@ const Tests: NextPage = () => {
 
 
     return (
-        <div>
+        <Box>
             <h1>Lets Count <span>{counter}</span></h1>
-            <div>
-                <Button onClick={e => setCounter(0)}>Reset</Button>
-                <Button onClick={handleCounterIteration}>Iterate</Button>
-            </div>
-        </div>
+            <Box>
+                <Button variant='outlined' onClick={e => setCounter(0)}>Reset</Button>
+                <Button variant='outlined' onClick={handleCounterIteration}>Iterate</Button>
+            </Box>
+        </Box>
     )
 }
 export default Tests

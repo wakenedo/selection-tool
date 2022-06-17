@@ -12,6 +12,7 @@ h1, h2, h3 {
 }
 
 span {
+  font-family: Ubuntu, sans-serif;
   color: #0070f3;
   font-weight: 700;
 }
