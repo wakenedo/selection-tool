@@ -13,10 +13,17 @@ const Tests: NextPage = () => {
 
 
     return (
-        <Box>
+        <Box
+            margin={2}
+            width={300} 
+            textAlign='center'
+        >
             <h1>Lets Count <span>{counter}</span></h1>
-            <Box>
-                <Button variant='outlined' onClick={e => setCounter(0)}>Reset</Button>
+            <Box
+                display='flex'
+                flexDirection='column'
+            >
+                <Button  variant='outlined' onClick={e => setCounter(0)}>Reset</Button>
                 <Button variant='outlined' onClick={handleCounterIteration}>Iterate</Button>
             </Box>
         </Box>
