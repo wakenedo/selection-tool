@@ -1,8 +1,15 @@
 .container {
-  
+  height: 100vh;
 }
 .section {
   display: flex;
+  justify-content: space-around;
+}
+.login {
+
+}
+.featuredDev{
+  
 }
 
 @media (max-width: 600px) {

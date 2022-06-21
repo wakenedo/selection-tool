@@ -14,8 +14,12 @@ const Home: NextPage = () => {
       </Head>
       <div className={styles.container}>
         <div className={styles.section}>
-          <Login />
-          <FeaturedDevHome />
+          <div className={styles.login}>
+            <Login />
+          </div>
+          <div className={styles.featuredDev}>
+            <FeaturedDevHome />
+          </div>
         </div>
       </div>
     </>
