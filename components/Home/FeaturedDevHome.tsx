@@ -7,6 +7,7 @@ export const FeaturedDevHome = () => {
         width={465}
         height='100vh'
         bgcolor='#4548F0'
+        
         >
             <FeaturedDevBadge/>
         </Box>
