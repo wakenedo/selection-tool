@@ -1,3 +1,4 @@
+import { Box, Grid } from '@mui/material'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { FeaturedDevHome } from '../components/Home/FeaturedDevHome'
@@ -14,12 +15,20 @@ const Home: NextPage = () => {
       </Head>
       <div className={styles.container}>
         <div className={styles.section}>
-          <div className={styles.login}>
-            <Login />
-          </div>
-          <div className={styles.featuredDev}>
-            <FeaturedDevHome />
-          </div>
+          <Grid
+            display='flex'
+          >
+            <Box
+            marginRight={2.5}
+            marginLeft={85}
+            >
+            
+              <Login />
+            </Box>
+            <Box>
+              <FeaturedDevHome />
+            </Box>
+          </Grid>
         </div>
       </div>
     </>

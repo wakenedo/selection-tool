@@ -4,12 +4,7 @@
 .section {
   display: flex;
 }
-.login {
 
-}
-.featuredDev{
-  
-}
 
 @media (max-width: 600px) {
   .grid {
