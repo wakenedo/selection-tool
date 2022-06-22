@@ -7,7 +7,6 @@ export const FeaturedDevBadge = () => {
         height={502}
         bgcolor='#1F2729'
         margin='auto'
-
         >
             
         </Box>

@@ -19,8 +19,9 @@ const Home: NextPage = () => {
             display='flex'
           >
             <Box
-            marginRight={2.5}
-            marginLeft={85}
+            marginRight={7.5}
+            marginLeft={90}
+            marginTop='12%'
             >
             
               <Login />
