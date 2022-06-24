@@ -1,27 +1,41 @@
-import { Box,Button,TextField, Typography } from "@mui/material"
+import { Box, Button, Input, Stack, TextField, Typography } from "@mui/material"
 
 export const Login = () => {
     return (
-        <Box
-        width={405}
-        height={514}
-        bgcolor='#29292E'
+        <Stack
+            width={405}
+            height={514}
+            bgcolor='#29292E'
+            spacing={2}
         >
             <Typography
-            variant='h3'
-            color='#FFFFFF'
+                variant='h4'
+                color='#FFFFFF'
             >Login</Typography>
             <Typography
-            variant='subtitle2'
-            color='#FFFFFF'
+                variant='subtitle2'
+                color='#FFFFFF'
             >E-mail:</Typography>
-            <TextField></TextField>
+            <Input
+                fullWidth
+                placeholder="Registered e-mail..."
+            ></Input>
             <Typography
-            variant='subtitle2'
-            color='#FFFFFF'
+                variant='subtitle2'
+                color='#FFFFFF'
             >Password:</Typography>
-            <TextField></TextField>
-            <Button>Register / Login</Button>
-        </Box>
+            <Input
+                fullWidth
+                placeholder="Your password..."
+            ></Input>
+            <Button
+                variant='contained'
+                color="success"
+            >Register / Login</Button>
+            <Typography
+                variant='subtitle1'
+                color='#FFFFFF'
+            >Continue with:</Typography>
+        </Stack>
     )
 }
