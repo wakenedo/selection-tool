@@ -1,4 +1,4 @@
-import { Box, Button, Input, Stack, TextField, Typography } from "@mui/material"
+import { Box, Button, TextField, Stack, Typography } from "@mui/material"
 
 export const Login = () => {
     return (
@@ -6,7 +6,7 @@ export const Login = () => {
             sx={{
                 bgcolor: '#29292E',
                 width: {
-                    lg: '450px',
+                    lg: '355px',
                     xs: '350px'
                 },
                 margin: {
@@ -19,13 +19,20 @@ export const Login = () => {
 
             <Stack>
                 <Box
-                sx={{
-                    padding: {
-                        lg: '25px',
-                        xs: '25px'
-                    }
-                }}
-                
+                    sx={{
+                        borderBottom: '1px solid #F4F6FC',
+                        width: {
+                            lg: '325px'
+                        },
+                        padding: {
+                            lg: '25px',
+                            xs: '25px', 
+                        },
+                        marginLeft: {
+                            lg: '15px'
+                        }
+                    }}
+
                 >
                     <Typography
                         variant='h4'
@@ -54,15 +61,27 @@ export const Login = () => {
                                 xs: '45px',
                             },
                             fontSize: {
-                                lg: '18px',
+                                lg: '15px',
                                 xs: '12px',
                             }
                         }}
                     >E-mail:</Typography>
-                    <Input
-                        fullWidth
+                    <TextField
+                        variant='filled'   
+                        sx={{
+                            backgroundColor: '#FFFFFF',
+                            width: {
+                                lg: '400x',
+                                xs: '270px'
+                            },
+                            margin: {
+                                lg: 'px',
+                                xs: '15px',
+                            },
+                            
+                        }}
                         placeholder="Registered e-mail..."
-                    ></Input>
+                    ></TextField>
                     <Typography
                         variant='subtitle2'
                         color='#FFFFFF'
@@ -74,24 +93,62 @@ export const Login = () => {
                             marginTop: {
                                 lg: '5px',
                                 xs: '10px',
+                            },
+                            fontSize: {
+                                lg: '15px',
+                                xs: '12px',
                             }
                         }}
                     >Password:</Typography>
-                    <Input
-                        fullWidth
+                    <TextField
+                        variant='filled'
+                        sx={{
+                            backgroundColor: '#ffffff',
+                            fontColor: '#000000',
+                            width: {
+                                lg: '400x',
+                                xs: '270px'
+                            },
+                            margin:
+                            {
+                                lg: 'px',
+                                xs: '15px',
+                            },
+                            
+                        }}
                         placeholder="Your password..."
-                    ></Input>
+                    ></TextField>
                     <Button
                         variant='contained'
-                        color="success"
+                        
+                        sx={{
+                            backgroundColor: '#121214',
+                            marginLeft: {
+                                lg: '65px',
+                                xs: '65px'
+                            },
+                            marginBottom: {
+                                lg: '15px',
+                                xs: '10px'
+                            },
+                            marginTop: {
+                                lg: '15px',
+                                xs: '10px'
+                            }
+                        }}
                     >Register / Login</Button>
+                </Box>
                     <Typography
                         variant='subtitle1'
                         color='#FFFFFF'
                         sx={{
+                            fontSize: {
+                                lg: '15px',
+                                xs: '12px'
+                            },
                             marginLeft: {
-                                lg: '20px',
-                                xs: '20px',
+                                lg: '0px',
+                                xs: '0px',
                             },
                             marginTop: {
                                 lg: '5px',
@@ -99,7 +156,6 @@ export const Login = () => {
                             }
                         }}
                     >Continue with:</Typography>
-                </Box>
             </Stack>
         </Box>
     )
