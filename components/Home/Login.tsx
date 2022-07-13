@@ -37,7 +37,7 @@ export const Login = () => {
                 >
                     <Typography
                         variant='h4'
-                        color='#FFFFFF'
+                        color='#969696'
                         sx={{
                             marginLeft: {
                                 lg: '20px',
@@ -57,7 +57,7 @@ export const Login = () => {
                     </Typography>
                     <Typography
                         fontWeight='thin'
-                        color='#FFFFFF'
+                        color='#969696'
                         sx={{
                             marginLeft: {
                                 lg: '20px',
@@ -109,7 +109,7 @@ export const Login = () => {
                     ></TextField>
                     <Typography
                         variant='subtitle2'
-                        color='#FFFFFF'
+                        color='#969696'
                         sx={{
                             marginLeft: {
                                 lg: '20px',
@@ -193,7 +193,7 @@ export const Login = () => {
                     <Box
                         
                         sx={{
-                            borderBottom: '1px solid #F4F6FC',
+                            borderBottom: '1px solid #969696',
                             marginLeft: {
                                 lg: '21px',
                                 xs: '8px'
@@ -210,7 +210,7 @@ export const Login = () => {
                 </Box>
                 <Typography
                     variant='subtitle1'
-                    color='#FFFFFF'
+                    color='#969696'
                     sx={{
                         fontSize: {
                             lg: '15px',
