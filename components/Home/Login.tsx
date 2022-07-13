@@ -171,7 +171,7 @@ export const Login = () => {
                                 xs: '83.5px'
                             },
                             marginBottom: {
-                                lg: '15px',
+                                lg: '20px',
                                 xs: '15px'
                             },
                             marginTop: {
