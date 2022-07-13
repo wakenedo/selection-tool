@@ -6,31 +6,32 @@ export const Login = () => {
             sx={{
                 bgcolor: '#29292E',
                 width: {
-                    lg: '355px',
+                    lg: '400px',
                     xs: '350px'
                 },
                 margin: {
                     lg: 'none',
                     xs: 'auto'
+                },
+                marginTop: {
+                    lg: '45px',
+                    xs: '5px'
                 }
-
             }}
         >
 
             <Stack>
                 <Box
                     sx={{
-                        borderBottom: '1px solid #F4F6FC',
+
                         width: {
                             lg: '325px'
                         },
                         padding: {
-                            lg: '25px',
-                            xs: '25px', 
+                            lg: '5px',
+                            xs: '5px',
                         },
-                        marginLeft: {
-                            lg: '15px'
-                        }
+
                     }}
 
                 >
@@ -40,47 +41,71 @@ export const Login = () => {
                         sx={{
                             marginLeft: {
                                 lg: '20px',
-                                xs: '20px',
+                                xs: '5px',
                             },
                             marginTop: {
-                                lg: '5px',
+                                lg: '22px',
                                 xs: '10px',
+                            },
+                            fontSize: {
+                                lg: '45px',
+                                xs: '50px'
                             }
                         }}
-                    >Login</Typography>
+                    >
+                        Login
+                    </Typography>
                     <Typography
                         fontWeight='thin'
                         color='#FFFFFF'
                         sx={{
                             marginLeft: {
                                 lg: '20px',
-                                xs: '20px',
+                                xs: '5px',
                             },
                             marginTop: {
                                 lg: '45px',
-                                xs: '45px',
+                                xs: '15px',
                             },
                             fontSize: {
-                                lg: '15px',
+                                lg: '13px',
                                 xs: '12px',
                             }
                         }}
-                    >E-mail:</Typography>
+                    >
+                        E-mail:
+                    </Typography>
                     <TextField
-                        variant='filled'   
+
+                        placeholder="Registered e-mail..."
                         sx={{
                             backgroundColor: '#FFFFFF',
+                            borderRadius: '5px',
                             width: {
-                                lg: '400x',
-                                xs: '270px'
+                                lg: '350px',
+                                xs: '328px'
+                            },
+                            marginLeft: {
+                                lg: '18px'
                             },
                             margin: {
                                 lg: 'px',
-                                xs: '15px',
+                                xs: '5px',
                             },
-                            
+                            height: {
+                                lg: '42px',
+                                xs: '31px'
+                            },
+                            input: {
+                                height: {
+                                    lg: '10px',
+                                    xs: '0px'
+                                }
+
+                            },
+
+
                         }}
-                        placeholder="Registered e-mail..."
                     ></TextField>
                     <Typography
                         variant='subtitle2'
@@ -88,74 +113,121 @@ export const Login = () => {
                         sx={{
                             marginLeft: {
                                 lg: '20px',
-                                xs: '20px',
+                                xs: '5px',
                             },
                             marginTop: {
-                                lg: '5px',
-                                xs: '10px',
+                                lg: '35px',
+                                xs: '25px',
                             },
                             fontSize: {
-                                lg: '15px',
+                                lg: '13px',
                                 xs: '12px',
                             }
                         }}
-                    >Password:</Typography>
+                    >
+                        Password:
+                    </Typography>
                     <TextField
-                        variant='filled'
+                        placeholder="Your password..."
                         sx={{
                             backgroundColor: '#ffffff',
+                            borderRadius: '5px',
                             fontColor: '#000000',
                             width: {
-                                lg: '400x',
-                                xs: '270px'
+                                lg: '350px',
+                                xs: '328px'
                             },
-                            margin:
+                            marginLeft:
                             {
-                                lg: 'px',
-                                xs: '15px',
+                                lg: '18px',
+                                xs: '',
                             },
-                            
+                            margin: {
+                                lg: 'px',
+                                xs: '5px',
+                            },
+                            height: {
+                                lg: '42px',
+                                xs: '31px'
+                            },
+                            input: {
+                                height: {
+                                    lg: '10px',
+                                    xs: '0px'
+                                }
+
+                            },
+
                         }}
-                        placeholder="Your password..."
                     ></TextField>
                     <Button
                         variant='contained'
-                        
+
                         sx={{
                             backgroundColor: '#121214',
+                            textTransform: 'inherit',
                             marginLeft: {
-                                lg: '65px',
-                                xs: '65px'
+                                lg: '97px',
+                                xs: '83.5px'
                             },
                             marginBottom: {
                                 lg: '15px',
-                                xs: '10px'
+                                xs: '15px'
                             },
                             marginTop: {
-                                lg: '15px',
-                                xs: '10px'
+                                lg: '25px',
+                                xs: '25px'
+                            },
+                            width: {
+                                lg: '190px',
+                                xs: '160px'
+
+                            },
+                            height: {
+                                lg: '45px',
                             }
                         }}
-                    >Register / Login</Button>
-                </Box>
-                    <Typography
-                        variant='subtitle1'
-                        color='#FFFFFF'
+                    >
+                        Register / Login
+                    </Button>
+                    <Box
+                        
                         sx={{
-                            fontSize: {
-                                lg: '15px',
-                                xs: '12px'
-                            },
+                            borderBottom: '1px solid #F4F6FC',
                             marginLeft: {
-                                lg: '0px',
-                                xs: '0px',
+                                lg: '21px',
+                                xs: '8px'
                             },
-                            marginTop: {
-                                lg: '5px',
-                                xs: '10px',
-                            }
+                            width: {
+                                lg: '335px',
+                                xs: '320px'
+                            },
+                            
                         }}
-                    >Continue with:</Typography>
+                    >
+
+                    </Box>
+                </Box>
+                <Typography
+                    variant='subtitle1'
+                    color='#FFFFFF'
+                    sx={{
+                        fontSize: {
+                            lg: '15px',
+                            xs: '14px'
+                        },
+                        marginLeft: {
+                            lg: '27px',
+                            xs: '12px',
+                        },
+                        marginTop: {
+                            lg: '0px',
+                            xs: '0px',
+                        }
+                    }}
+                >
+                    Continue with:
+                </Typography>
             </Stack>
         </Box>
     )
