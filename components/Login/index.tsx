@@ -1,4 +1,5 @@
 import { Box, Button, TextField, Stack, Typography } from "@mui/material"
+import SocialLinks from "./SocialLinks"
 
 export const Login = () => {
     return (
@@ -228,6 +229,7 @@ export const Login = () => {
                 >
                     Continue with:
                 </Typography>
+                <SocialLinks />
             </Stack>
         </Box>
     )

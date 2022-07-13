@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Login } from '../components/Login'
 
 
+
 const Home: NextPage = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
         <Login />
+        
     </>
   )
 }
