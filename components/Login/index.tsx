@@ -6,7 +6,7 @@ export const Login = () => {
             sx={{
                 bgcolor: '#29292E',
                 width: {
-                    lg: '400px',
+                    lg: '395px',
                     xs: '350px'
                 },
                 margin: {
